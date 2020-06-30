@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta task</title>
+</head>
+
+<body>
+
+    <!--station-->
+    <div class="station">
+
+        <!--top-->
+        <div class="top">
+            <ul>
+                <li><button><i id="angle" class="fas fa-angle-left"></i></button></li>
+                <li><p>STATIONS</p></li>
+                <li><button><i id="power" class="fas fa-power-off"></i></button></li>
+            </ul>
+        </div>
+        <!--top-->
+
+        <!--middle-->
+        <div class="middle">
+
+            <!--UL List-->
+            <ul>
+
+                <!--List one-->
+                <li class="show-one"> <i id="minus" class="fas fa-minus-circle"></i> <img src="assets/images/radio.jpg">
+                    <i id="plus" class="fas fa-plus-circle "></i></li>
+                <li onclick="apper(event)" class="click-one"> Putin FM </li>
+                <span>66,6</span>
+                <!--List one-->
+
+                <!--List two-->
+                <li class="show-two"> <i id="minus" class="fas fa-minus-circle"></i> <img src="assets/images/radio.jpg">
+                    <i id="plus" class="fas fa-plus-circle"></i> </li>
+                <li onclick="apper(event)" class="click-two">Dribble FM </li>
+                <span>101,2</span>
+                <!--List two-->
+
+                <!--List there-->
+                <li class="show-there"> <i id="minus" class="fas fa-minus-circle"></i><img src="assets/images/radio.jpg"> 
+                    <i id="plus" class="fas fa-plus-circle"></i> </li>
+                <li onclick="apper(event)" class="click-there">Doge FM </li>
+                <span>99,4</span>
+                <!--List there-->
+
+                <!--List four-->
+                <li class="show-four"> <i id="minus" class="fas fa-minus-circle"></i> <img src="assets/images/radio.jpg"> 
+                    <i id="plus" class="fas fa-plus-circle"></i></li>
+                <li onclick="apper(event)" class="click-four">Ballads FM </li>
+                <span>87,1</span>
+                <!--List four-->
+
+                <!--List five-->
+                <li class="show-five"> <i id="minus" class="fas fa-minus-circle"></i> <img src="assets/images/radio.jpg"> 
+                    <i id="plus" class="fas fa-plus-circle"></i></li>
+                <li onclick="apper(event)" class="click-five">Maximum FM </li>
+                <span>142,2</span>
+                <!--List five-->
+
+            </ul>
+            <!--UL List-->
+
+        </div>
+        <!--middle-->
+
+        <!--playing-->
+        <div class="playing">
+            <p class="finish"> currently playing</p>
+        </div> <!--playing-->
+
+        <!--bottom-->
+        <div id="demo" class="bottom"></div> <!--bottom-->
+
+    </div>
+    <!--station-->
+</body>
+
+</html>
