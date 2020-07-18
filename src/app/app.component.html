@@ -1,38 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta task</title>
-</head>
-
-<body>
-    <div class="station">
-        <div class="top">
-            <ul>
-                <li><button><i id="angle" class="fas fa-angle-left"></i></button></li>
-                <li>
-                    <p>STATIONS</p>
-                </li>
-                <li><button><i id="power" class="fas fa-power-off"></i></button></li>
-            </ul>
-        </div>
-        <div class="middle">
-            <ul *ngFor="let radio of radio">
-                <li class="show-one">
-                    <i id="minus" class="fas fa-minus-circle"></i>
-                    <img src="assets/images/radio.jpg">
-                    <i id="plus" class="fas fa-plus-circle "></i></li>
-                <li (click)=slide($event)> {{radio.station}} </li>
-                <span>{{radio.number}}</span>
-            </ul>
-        </div>
-        <div class="playing">
-            <p class="finish"> currently playing</p>
-        </div>
-        <div id="demo" class="bottom"></div>
+<div class="station">
+    <div class="top">
+        <ul>
+            <li><button><i id="angle" class="fas fa-angle-left"></i></button></li>
+            <li>
+                <p>STATIONS</p>
+            </li>
+            <li><button><i id="power" class="fas fa-power-off"></i></button></li>
+        </ul>
     </div>
-</body>
+    <div class="middle">
+        <ul *ngFor="let radio of radio">
+            <li class="show-one">
+                <i id="minus" class="fas fa-minus-circle"></i>
+                <img src="assets/images/radio.jpg">
+                <i id="plus" class="fas fa-plus-circle "></i></li>
+            <li (click)="slide($event)">{{radio.station}} </li>
+            <span>{{radio.number}}</span>
+        </ul>
+    </div>
+    <div class="playing"> <p class="finish">{{mssg}}</p> </div>
+    <div id="demo" class="bottom">{{channel}}</div>
+</div>
 
-</html>

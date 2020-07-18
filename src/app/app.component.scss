@@ -2,6 +2,7 @@
 *:after,
 *:before {
   @extend %border;
+ 
 }
 
 /* section */
@@ -24,7 +25,6 @@
       justify-content: space-between;
       li {
         list-style: none;
-
         #power {
           margin-right: 50px;
         }
@@ -63,6 +63,7 @@
     height: 335px;
     overflow: hidden;
     background-color: #2d2d38;
+  
     ul {
       position: relative;
       margin: 0;
@@ -73,10 +74,10 @@
         font-size: 22px;
         border-top: 0.5px solid #888;
         color: #ccc;
-        cursor: pointer;
         padding-left: 0px;
         position: relative;
         display: block;
+        cursor: pointer;
         &:hover {
           color: #fff;
         }
@@ -87,8 +88,6 @@
           border-radius: 50%;
           border: 3px solid #ccc;
           margin-left: 30px;
-        
-         
         }
 
         #minus {
@@ -121,13 +120,13 @@
   .playing {
     .finish {
       position: absolute;
-      margin-left: 137px;
+      margin-left: 145px;
       padding-top: 20px;
       color: #eeae61;
       font-size: 12px;
       font-weight: bold;
       text-transform: uppercase;
-      display: none;
+      
     }
   }
 
@@ -143,11 +142,8 @@
   }
 }
 
-.station .middle ul li.show-one,
-.station .middle ul li.show-two,
-.station .middle ul li.show-there,
-.station .middle ul li.show-four,
-.station .middle ul li.show-five {
+.station .middle ul li.show-one
+ {
   display: none;
   text-align: center;
 }
